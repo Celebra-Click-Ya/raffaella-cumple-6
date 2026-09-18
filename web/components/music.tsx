@@ -4,7 +4,7 @@ import { Music2, Pause, Play, Star } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { bindAudio } from '@/lib/audio-player.mjs';
 
-const source = '/music/yo-soy-tu-amigo-fiel.mp3';
+const source = `${import.meta.env?.BASE_URL ?? '/'}music/yo-soy-tu-amigo-fiel.mp3`;
 const time = (seconds:number) => `${Math.floor(seconds/60)}:${String(Math.floor(seconds%60)).padStart(2,'0')}`;
 export default function Music() {
   const audio = useRef<HTMLAudioElement>(null);

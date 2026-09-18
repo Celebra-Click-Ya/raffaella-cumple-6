@@ -1,5 +1,5 @@
 import { CalendarDays, MapPin, Clock3, ArrowUpRight, Gift, Star } from 'lucide-react';
-import Image from 'next/image';
+import Image from '@/components/site-image';
 import Music from '@/components/music';
 import Countdown from '@/components/countdown';
 
